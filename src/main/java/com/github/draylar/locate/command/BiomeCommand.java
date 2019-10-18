@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.source.BiomeSource;
 
@@ -89,7 +90,7 @@ public class BiomeCommand {
             Text teleportPrompt = Texts
                     .bracketed(new TranslatableText("chat.coordinates", biomePos.getX(), "~", biomePos.getZ()))
                     .styled(style -> style.setColor(Formatting.GREEN)
-                            .setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " + biomePos.getX() + " ~ " + biomePos.getZ()))
+                            .setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " + biomePos.getX() + " " + 100 + " " + biomePos.getZ()))
                             .setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new TranslatableText("chat.coordinates.tooltip")))
                     );
 
