@@ -1,30 +1,30 @@
 
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "locate",
   "version": "${version}",
 
-  "name": "Fabric Example Mod",
-  "description": "Draylar's Fabric Example Mod!",
+  "name": "Locate",
+  "description": "Locate structures and biomes!",
   "authors": [
     "Draylar"
   ],
   "contact": {
     "homepage": "https://github.com/Draylar",
-    "sources": "https://github.com/Draylar/fabric-example-mod"
+    "sources": "https://github.com/Draylar/locate"
   },
 
   "license": "GPLv3",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/locate/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.draylar.modid.ExampleMod"
+      "com.github.draylar.locate.Locate"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "locate.mixins.json"
   ],
 
   "requires": {

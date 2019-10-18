@@ -1,0 +1,4 @@
+{
+  "locate.biome_not_valid": "%s is not a valid or registered biome!",
+  "locate.biome_not_found": "Could not locate %s within a radius of %d blocks."
+}
